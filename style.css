@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /*reseta o calculo do tamanho das caixa, faz as medidas corretas*/
+  box-sizing: border-box;
+  /*reseta o calculo do tamanho das caixa, faz as medidas corretas*/
 }
 
 /*o * é pra falar para todos os elementos do body usar a fonte family*/
@@ -12,30 +13,61 @@ body * {
 body {
   background: linear-gradient(151.79deg, #0F2B05, #000000);
   height: 100vh;
-  text-align: center; /*contem propriedade de texto*/ /*foi retirado do header para poder alinha o card*/
+  text-align: center;
+  /*contem propriedade de texto*/
+  /*foi retirado do header para poder alinha o card*/
 }
 
 header {
   padding: 75px;
-  border: 1px solid red; /*borda p identificar*/
+  border: 1px solid red;
+  /*borda p identificar*/
 }
 
 .card {
   width: 354px;
   height: 508px;
-  display: inline-block;/*usa propriedade inline mas tambem usa propriedades block*/
+  display: inline-block;
+  /*usa propriedade inline mas tambem usa propriedades block*/
   /*margens/preenchimentos superiores e inferiores são respeitados */
 
-  background-image:url(./assets/bg.explores.svg);
+  background-image: url(./assets/bg.explores.svg);
 
 }
 
-.card > img {
+.card>img {
 
   width: 150px;
   height: 150px;
   top: 103px;
   left: 57px;
   border-radius: 999px;
-  border: 4px solid #F7DD43;  
+  border: 4px solid #F7DD43;
+  margin-top: 115px;
+}
+
+.info {
+  margin-top: 98px;
+  color: white;
+  margin-left: 70px;
+  text-align: left;
+
+}
+
+.info h1 {
+  font-family: 'Roboto';
+  font-style: 18px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  color: white;
+}
+
+.info p {
+  font-family: 'Roboto';
+  font-style: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: white;
 }
