@@ -13,13 +13,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card NLW Copa</title>
     <link rel="stylesheet" href="./style.css" />
+    <!--linka uma pagina na outra, p/aparecer as alteracoes feitas-->
   </head>
   <body>
     <header>
       <img src="./assets/logo.svg" alt="logo da NLW Copa" />
     </header>
 
-    <div class="card" ondblclick="changeCard()"> <!--faz dois cliques na figurinha da copa--> 
+    <div class="card" ondblclick="changeCard(event)">
+      <!--faz dois cliques na figurinha da copa-->
       <img
         src="https://github.com/juliacsfreitas.png"
         alt="imagem de um gato"
@@ -28,6 +30,8 @@
         <h1>Julia Freitas</h1>
         <p>Programming student</p>
       </div>
+      <script src="./script.js"></script>
+      <!--linka uma pagina na outra, p/aparecer as alteracoes feitas-->
     </div>
   </body>
 </html>
