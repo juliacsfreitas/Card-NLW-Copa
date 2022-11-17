@@ -21,7 +21,7 @@ body {
 
 header {
   padding: 75px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /*borda p identificar*/
 }
 
@@ -34,8 +34,14 @@ header {
 
   background-image: url(./assets/bg.ignite.svg);
 
-  cursor: pointer; /*aparece uma maozinha no mouse como se fosse para clicar*/
+  cursor: pointer;
+  /*aparece uma maozinha no mouse como se fosse para clicar*/
 
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: appear .4s forwards;
+  user-select: none;
+  -webkit-user-select: none;
 
 }
 
@@ -49,7 +55,14 @@ header {
   margin-top: 115px;
 
   pointer-events: none;
+
   user-select: none;
+  /*para usar em qualquer*/
+  -webkit-user-select: none;
+  /*necessario quando nao é possivel ser usado em todos os navegadores*/
+  -moz-user-select: none;
+  /*faz desaparecer qualquer selecao que faça na imagem*/
+
 }
 
 .info {
@@ -75,4 +88,12 @@ header {
   /* font-size: 14px; */
   line-height: 160%;
   /* color: white; */
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
 }
